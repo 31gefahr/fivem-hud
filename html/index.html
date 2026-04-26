@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="main-hud">
+        <div class="hud-container">
+            <div class="hud-row id-row">
+                <span class="label-tiny">ID</span>
+                <span id="player-id">#0</span>
+            </div>
+            <hr class="hud-divider">
+            <div class="hud-row money-row">
+                <div class="money-item">
+                    <i class="fas fa-wallet icon-green"></i>
+                    <div class="money-text">
+                        <span class="label-tiny">WALLET</span>
+                        <span class="value-green">$<span id="cash-amount">0</span></span>
+                        <span id="cash-change" class="change-popup"></span>
+                    </div>
+                </div>
+                <div class="money-item">
+                    <i class="fas fa-university icon-blue"></i>
+                    <div class="money-text">
+                        <span class="label-tiny">BANK</span>
+                        <span class="value-blue">$<span id="bank-amount">0</span></span>
+                    </div>
+                </div>
+            </div>
+            <hr class="hud-divider">
+            <div class="hud-row flex-end">
+                <div class="text-right">
+                    <span class="label-tiny">JOB</span>
+                    <span id="job-name" class="value-white">UNEMPLOYED</span>
+                </div>
+                <i class="fas fa-briefcase icon-gray"></i>
+            </div>
+        </div>
+
+        <div class="bottom-left">
+            <div class="status-container">
+                <div class="status-box"><div class="circle health"><i class="fas fa-heart"></i></div><span id="health-val">0%</span></div>
+                <div class="status-box"><div class="circle armor"><i class="fas fa-shield-alt"></i></div><span id="armor-val">0%</span></div>
+                <div class="status-box"><div class="circle hunger"><i class="fas fa-utensils"></i></div><span id="hunger-val">0%</span></div>
+                <div class="status-box"><div class="circle thirst"><i class="fas fa-tint"></i></div><span id="thirst-val">0%</span></div>
+                <div class="status-box"><div class="circle stamina"><i class="fas fa-running"></i></div><span id="stamina-val">0%</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="car-hud" style="display: none;">
+        <div class="speedometer-v3">
+            <div class="fuel-bar-container">
+                <div id="fuel-fill" class="fuel-fill"></div>
+                <i class="fas fa-gas-pump fuel-icon"></i>
+            </div>
+            <div class="circle-container">
+                <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle id="rpm-circle" class="prog" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="speed-info">
+                    <span id="speed-val">0</span>
+                    <span class="unit">MPH</span>
+                    <span id="gear-val">N</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
