@@ -1,2 +1,1 @@
-# fivem-hud
-fivem hud
+https://discord.gg/nPXX2dvs destek için / for support
