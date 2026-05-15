@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'Gefahr17 – Hud'
-version '1.0.0'
+
 
 ui_page 'html/index.html'
 
